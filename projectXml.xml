@@ -1,42 +1,45 @@
 
 <processor>
 
-    <module enabled="$properties.module.AS2SenderModule.enabled$"
 
-        classname="org.openas2.processor.sender.AS2SenderModule"
+   <module enabled="$properties.module.AS2SenderModule.enabled$"
+   classname="org.openas2.processor.sender.AS2SenderModule"
 
-        readtimeout="$properties.module.AS2SenderModule.readtimeout$"
+    readtimeout="$properties.module.AS2SenderModule.readtimeout$"
 
-        sender_as2 = "inx"
+    sender_as2 = "inx"
 
-        receiver_as2 = "ait" />
+    receiver_as2 = "ait" />
 
-    <module enabled="$properties.module.AS2SenderModule.enabled$"
+  <module enabled="$properties.module.AS2SenderModule.enabled$"
 
-        classname="org.openas2.processor.sender.AS2SenderModule"
+    classname="org.openas2.processor.sender.AS2SenderModule"
 
-        readtimeout="$properties.module.AS2SenderModule.readtimeout$"
+    readtimeout="$properties.module.AS2SenderModule.readtimeout$"
 
-        sender_as2 = "inx"
+    sender_as2 = "inx"
 
-        receiver_as2 = "abc" />
-    <module enabled="$properties.module.AS2SenderModule.enabled$"
+    receiver_as2 = "abc" />
 
-        classname="org.openas2.processor.sender.AS2SenderModule"
+  <module enabled="$properties.module.AS2SenderModule.enabled$"
 
-        readtimeout="$properties.module.AS2SenderModule.readtimeout$"
+    classname="org.openas2.processor.sender.AS2SenderModule"
 
-        sender_as2 = "inx"
+    readtimeout="$properties.module.AS2SenderModule.readtimeout$"
 
-        receiver_as2 = "xyz" />
-     <module enabled="$properties.module.AS2SenderModule.enabled$"
+    sender_as2 = "inx"
 
-        classname="org.openas2.processor.sender.AS2SenderModule"
+    receiver_as2 = "xyz" />
 
-        readtimeout="$properties.module.AS2SenderModule.readtimeout$"
+  <module enabled="$properties.module.AS2SenderModule.enabled$"
 
-        sender_as2 = "inx"
+    classname="org.openas2.processor.sender.AS2SenderModule"
 
-        receiver_as2 = "123" />
+    readtimeout="$properties.module.AS2SenderModule.readtimeout$"
+
+    sender_as2 = "inx"
+
+    receiver_as2 = "123" />
 
 </processor>
+
