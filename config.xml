@@ -1,338 +1,151 @@
-<?xml version="1.0" encoding="UTF-8"?>
-    <openas2>
-            <properties storageBaseDir="%home%/../data"
-                    log_date_format="yyyy-MM-dd HH:mm:ss.SSS"
-                    sql_timestamp_format="yyyy-MM-dd HH:mm:ss.SSS"
-                    as2_message_id_format="OPENAS2-$date.ddMMyyyyHHmmssZ$-$rand.UUID$@$msg.sender.as2_id$_$msg.receiver.as2_id$"
-                    as2_async_mdn_url="http://localhost:10081"
-                    as2_receive_message_filename_fallback="$rand.shortUUID$"
-                    console.logger.enabled="true"
-                    file.logger.enabled="true"
-                    socket.logger.enabled="false"
-                    email.logger.enabled="false"
-                    console.command.processor.enabled="true"
-                    socket.command.processor.enabled="false"
-                    restapi.command.processor.enabled="false"
-                    module.AS2SenderModule.enabled="true"
-                    module.MDNSenderModule.enabled="true"
-                    module.DbTrackingModule.enabled="true"
-                    module.MDNFileModule.enabled="true"
-                    module.MessageFileModule.enabled="true"
-                    module.DirectoryResenderModule.enabled="true"
-                    module.AS2ReceiverModule.http.enabled="true"
-                    module.AS2MDNReceiverModule.http.enabled="true"
-                    module.AS2ReceiverModule.https.enabled="false"
-                    module.AS2MDNReceiverModule.https.enabled="false"
-                    module.HealthCheckModule.enabled="true"
-                    />
-            <certificates classname="org.openas2.cert.PKCS12CertificateFactory"
-                            filename="%home%/as2_certs.p12"
-                            password="testas2"
-                            interval="300"/>
-            <partnerships classname="org.openas2.partner.XMLPartnershipFactory"
-                            filename="%home%/partnerships.xml"
-                            interval="120"/>
-            <loggers>
-            <logger classname="org.openas2.logging.ConsoleLogger"
-                    enabled="$properties.console.logger.enabled$"/>
-            <logger classname="org.openas2.logging.EmailLogger"
-                    enabled="$properties.email.logger.enabled$"
-                    only_active_msg_transfer_errors="false"
-                    log_exception_trace="false"
-                    javax.mail.properties.file="%home%/java.mail.properties"
-                    from="openas2"
-                    to="your email address"
-                    smtpserver="your smtp server"
-                    smtpport="your smtp server port"
-                    smtpauth="true"
-                    smtpuser="mySmtpUserId"
-                    smtppwd="mySmtpPwd"
-                    subject="$exception.name$: $exception.message$"
-                    bodytemplate="%home%/emailtemplate.txt"/>
-            <logger classname="org.openas2.logging.FileLogger"
-                    enabled="$properties.file.logger.enabled$"
-                    filename="%home%/../logs/log-$date.yyyyMMdd$.txt"/>
-            <logger classname="org.openas2.logging.SocketLogger"
-                    enabled="$properties.socket.logger.enabled$"
-                    ipaddr="127.0.0.1"
-                    portid="19999"/>
-            </loggers>
-            <commands classname="org.openas2.cmd.XMLCommandRegistry"
-                    filename="%home%/commands.xml"/>
-            <commandProcessors>
-            <commandProcessor classname="org.openas2.cmd.processor.StreamCommandProcessor"
-                                    enabled="$properties.console.command.processor.enabled$"/>
-            <commandProcessor classname="org.openas2.cmd.processor.SocketCommandProcessor"
-                                    enabled="$properties.socket.command.processor.enabled$"
-                                    portId="14321"
-                                    userid="userID"
-                                    password="pWd"
-                                    response_format="xml"/>
-            <commandProcessor classname="org.openas2.cmd.processor.RestCommandProcessor" 
-                                    enabled="$properties.restapi.command.processor.enabled$"
-                                    baseuri="https://localhost:8443" 
-                                    ssl_protocol="TLS"
-                                    ssl_keystore="%home%/ssl_certs.jks"
-                                    ssl_keystore_password="testas2"
-                                    userid="userID" 
-                                    password="pWd" />
-            </commandProcessors>
-            <processor classname="org.openas2.processor.DefaultProcessor"
-                    pendingMDN="$properties.storageBaseDir$/pendingMDN3"
-                    pendingMDNinfo="$properties.storageBaseDir$/pendinginfoMDN3"
-                    resend_max_retries="5">
-            <module enabled="$properties.module.AS2SenderModule.enabled$"
-                    classname="org.openas2.processor.sender.AS2SenderModule"/>
-            <module enabled="$properties.module.MDNSenderModule.enabled$"
-                    classname="org.openas2.processor.sender.MDNSenderModule"/>
-            <!-- This directory polling module will parse the filename to get a sender, receiver and name of file to send to partner.
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<openas2>
+                
+    <properties as2_async_mdn_url="http://localhost:10081" as2_message_id_format="OPENAS2-$date.ddMMyyyyHHmmssZ$-$rand.UUID$@$msg.sender.as2_id$_$msg.receiver.as2_id$" as2_receive_message_filename_fallback="$rand.shortUUID$" console.command.processor.enabled="true" console.logger.enabled="true" email.logger.enabled="false" file.logger.enabled="true" log_date_format="yyyy-MM-dd HH:mm:ss.SSS" module.AS2MDNReceiverModule.http.enabled="true" module.AS2MDNReceiverModule.https.enabled="false" module.AS2ReceiverModule.http.enabled="true" module.AS2ReceiverModule.https.enabled="false" module.AS2SenderModule.enabled="true" module.DbTrackingModule.enabled="true" module.DirectoryResenderModule.enabled="true" module.HealthCheckModule.enabled="true" module.MDNFileModule.enabled="true" module.MDNSenderModule.enabled="true" module.MessageFileModule.enabled="true" restapi.command.processor.enabled="false" socket.command.processor.enabled="false" socket.logger.enabled="false" sql_timestamp_format="yyyy-MM-dd HH:mm:ss.SSS" storageBaseDir="%home%/../data"/>
+                
+    <certificates classname="org.openas2.cert.PKCS12CertificateFactory" filename="%home%/as2_certs.p12" interval="300" password="testas2"/>
+                
+    <partnerships classname="org.openas2.partner.XMLPartnershipFactory" filename="%home%/partnerships.xml" interval="120"/>
+                
+    <loggers>
+                    
+        <logger classname="org.openas2.logging.ConsoleLogger" enabled="$properties.console.logger.enabled$"/>
+                    
+        <logger bodytemplate="%home%/emailtemplate.txt" classname="org.openas2.logging.EmailLogger" enabled="$properties.email.logger.enabled$" from="openas2" javax.mail.properties.file="%home%/java.mail.properties" log_exception_trace="false" only_active_msg_transfer_errors="false" smtpauth="true" smtpport="your smtp server port" smtppwd="mySmtpPwd" smtpserver="your smtp server" smtpuser="mySmtpUserId" subject="$exception.name$: $exception.message$" to="your email address"/>
+                    
+        <logger classname="org.openas2.logging.FileLogger" enabled="$properties.file.logger.enabled$" filename="%home%/../logs/log-$date.yyyyMMdd$.txt"/>
+                    
+        <logger classname="org.openas2.logging.SocketLogger" enabled="$properties.socket.logger.enabled$" ipaddr="127.0.0.1" portid="19999"/>
+                    
+    </loggers>
+                
+    <commands classname="org.openas2.cmd.XMLCommandRegistry" filename="%home%/commands.xml"/>
+                
+    <commandProcessors>
+                    
+        <commandProcessor classname="org.openas2.cmd.processor.StreamCommandProcessor" enabled="$properties.console.command.processor.enabled$"/>
+                    
+        <commandProcessor classname="org.openas2.cmd.processor.SocketCommandProcessor" enabled="$properties.socket.command.processor.enabled$" password="pWd" portId="14321" response_format="xml" userid="userID"/>
+                    
+        <commandProcessor baseuri="https://localhost:8443" classname="org.openas2.cmd.processor.RestCommandProcessor" enabled="$properties.restapi.command.processor.enabled$" password="pWd" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS" userid="userID"/>
+                    
+    </commandProcessors>
+                
+    <processor classname="org.openas2.processor.DefaultProcessor" pendingMDN="$properties.storageBaseDir$/pendingMDN3" pendingMDNinfo="$properties.storageBaseDir$/pendinginfoMDN3" resend_max_retries="5">
+                    
+        <module classname="org.openas2.processor.sender.AS2SenderModule" enabled="$properties.module.AS2SenderModule.enabled$"/>
+                    
+        <module classname="org.openas2.processor.sender.MDNSenderModule" enabled="$properties.module.MDNSenderModule.enabled$"/>
+                    
+        <!-- This directory polling module will parse the filename to get a sender, receiver and name of file to send to partner.
                             For instance, a file named MyComapny_OID-ECHO_OID-OrderID-745634.edi would be sent from INX to ECHO.
                             The name of the file sent to the partner will be "OrderID-745634.edi" -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/toAny"
-                    errordir="$properties.storageBaseDir$/toAny/error/$msg.sender.as2_id$-$msg.receiver.as2_id$"
-                    interval="5"
-                    delimiters="-"
-                    mergeextratokens="true"
-                    sendfilename="true"
-                    format="sender.as2_id, receiver.as2_id, attributes.filename"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner ORDERFULAS2 -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/FLOCK/"
-                    errordir="$properties.storageBaseDir$/SendError/FLOCK/$date.YYYY$/$date.MM$"
-                    stored_error_filename="$msg.attributes.filename$-$date.YYYY$-$date.MM$-$msg.headers.message-id$"
-                    sentdir="$properties.storageBaseDir$/$msg.sender.as2_id$-$msg.receiver.as2_id$/sent/$date.YYYY$/$date.MM$"
-                    stored_sent_filename="$msg.attributes.filename$-$msg.headers.message-id$"
-                    interval="5"
-                    defaults="sender.as2_id=INXSTAGINGAS2, receiver.as2_id=ORDERFULAS2"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner ECHSTEST -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/ECHO"
-                    errordir="$properties.storageBaseDir$/SendError/ECHO"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=ECHSTEST"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <module enabled="$properties.module.DbTrackingModule.enabled$"
-                    classname="org.openas2.processor.msgtracking.DbTrackingModule"
-                    use_embedded_db="true"
-                    force_load_jdbc_driver="false"
-                    db_user="sa"
-                    db_pwd="OpenAS2"
-                    db_name="openas2"
-                    table_name="msg_metadata"
-                    db_directory="%home%/DB"
-                    jdbc_driver="org.h2.Driver"
-                    jdbc_connect_string="jdbc:h2:$component.db_directory$/$component.db_name$"
-                    sql_escape_character="'"
-                    tcp_server_start="true"
-                    tcp_server_port="9092"
-                    tcp_server_password="openas2"/>
-            <!-- This directory polling module will is dedicated to sending to partner ConWay_Test -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/XPO"
-                    errordir="$properties.storageBaseDir$/SendError/XPO"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=ConWay_Test"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner XPOFTL-XPOL -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/XPOFTL/"
-                    errordir="$properties.storageBaseDir$/SendError/XPOFTL/$date.YYYY$/$date.MM$"
-                    stored_error_filename="$msg.attributes.filename$-$date.YYYY$-$date.MM$-$msg.headers.message-id$"
-                    sentdir="$properties.storageBaseDir$/$msg.sender.as2_id$-$msg.receiver.as2_id$/sent/$date.YYYY$/$date.MM$"
-                    stored_sent_filename="$msg.attributes.filename$-$msg.headers.message-id$"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=CLTSIDEV_AS2"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>       
-            <!-- This directory polling module will is dedicated to sending to partner UPSFREIGHT -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/UPSFREIGHT"
-                    errordir="$properties.storageBaseDir$/SendError/UPSFREIGHT"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=UPSFREIGHT"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner YRC -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/YRC"
-                    errordir="$properties.storageBaseDir$/SendError/YRC"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=02RDWYT"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner USFREDDAWAY -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/USFREDDAWAY"
-                    errordir="$properties.storageBaseDir$/SendError/USFREDDAWAY"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=02RETLT"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner USFHOLLAND -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/USFHOLLAND"
-                    errordir="$properties.storageBaseDir$/SendError/USFHOLLAND"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=02HMEST"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner TQL -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/TQL"
-                    errordir="$properties.storageBaseDir$/SendError/TQL"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=TQYLAS2_T"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner ABFS -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/ABFS"
-                    errordir="$properties.storageBaseDir$/SendError/ABFS"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=ABFSINXEPTION"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner ECHOTST_OID -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/ECHOTST"
-                    errordir="$properties.storageBaseDir$/SendError/ECHOTST"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=ECHOTST_OID"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner FLOKTST_OID -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/FLOKTST"
-                    errordir="$properties.storageBaseDir$/SendError/FLOKTST"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=FLOKTST_OID"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner SCHNEIDER -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/SCHNEIDER"
-                    errordir="$properties.storageBaseDir$/SendError/SCHNEIDER"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=snias2qa"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner TOC -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/TOC"
-                    errordir="$properties.storageBaseDir$/SendError/TOC"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=TOC-Test2022"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner UBER  Kleinschmidt -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/UBER"
-                    errordir="$properties.storageBaseDir$/SendError/UBER"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=KLIINC-AS2"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <!-- This directory polling module will is dedicated to sending to partner ARK -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/ARK"
-                    errordir="$properties.storageBaseDir$/SendError/ARK"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=NEWAGEEDIAS2"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>        
-            <!-- This directory polling module will is dedicated to sending to partner coyote -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/COYOTE"
-                    errordir="$properties.storageBaseDir$/SendError/COYOTE"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=CoyoteEDITest"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-             <!-- This directory polling module will is dedicated to sending to partner edge -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/EDGE"
-                    errordir="$properties.storageBaseDir$/SendError/EDGE"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=EDGF"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-              <!-- This directory polling module will is dedicated to sending to partner edge -->
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/LOADSMART"
-                    errordir="$properties.storageBaseDir$/SendError/LOADSMART"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=LOADSMARTAS2TEST"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/CIRCLE"
-                    errordir="$properties.storageBaseDir$/SendError/CIRCLE"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=BABELWAY_AS2_32454"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/AIT"
-                    errordir="$properties.storageBaseDir$/SendError/AIT"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=AIIH"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-                    outboxdir="$properties.storageBaseDir$/Outbox/NTG"
-                    errordir="$properties.storageBaseDir$/SendError/NTG"
-                    interval="5"
-                    defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=NTGTESTAS2"
-                    sendfilename="true"
-                    mimetype="application/EDI-X12"/>
-            <module enabled="$properties.module.MDNFileModule.enabled$"
-                    classname="org.openas2.processor.storage.MDNFileModule"
-                    filename="$properties.storageBaseDir$/$mdn.msg.sender.as2_id$-$mdn.msg.receiver.as2_id$/mdn/$date.yyyy-MM-dd$/$mdn.msg.content-disposition.filename$-$mdn.msg.headers.message-id$"
-                    protocol="as2"
-                    tempdir="$properties.storageBaseDir$/temp"/>
-            <module enabled="$properties.module.MessageFileModule.enabled$"
-                    classname="org.openas2.processor.storage.MessageFileModule"
-                    filename="$properties.storageBaseDir$/Inbox/$msg.sender.as2_id$-$msg.receiver.as2_id$/$msg.content-disposition.filename$-$msg.headers.message-id$"
-                    header="$properties.storageBaseDir$/$msg.sender.as2_id$-$msg.receiver.as2_id$/msgheaders/$date.yyyy-MM-dd$/$msg.content-disposition.filename$-$msg.headers.message-id$"
-                    protocol="as2"
-                    tempdir="$properties.storageBaseDir$/temp"/>
-            <module enabled="$properties.module.AS2ReceiverModule.http.enabled$"
-                    classname="org.openas2.processor.receiver.AS2ReceiverModule"
-                    port="10080"
-                    errordir="$properties.storageBaseDir$/RecvError"
-                    errorformat="sender.as2_id, receiver.as2_id, headers.message-id"/>
-            <module enabled="$properties.module.AS2ReceiverModule.https.enabled$"
-                    classname="org.openas2.processor.receiver.AS2ReceiverModule"
-                    port="10443"
-                    protocol="https"
-                    ssl_protocol="TLS"
-                    ssl_keystore="%home%/ssl_certs.jks"
-                    ssl_keystore_password="testas2"
-                    errordir="$properties.storageBaseDir$/RecvError"
-                    errorformat="sender.as2_id, receiver.as2_id, headers.message-id"/>
-            <module enabled="$properties.module.AS2MDNReceiverModule.http.enabled$"
-                    classname="org.openas2.processor.receiver.AS2MDNReceiverModule"
-                    port="10081"/>
-            <module enabled="$properties.module.AS2MDNReceiverModule.https.enabled$"
-                    classname="org.openas2.processor.receiver.AS2MDNReceiverModule"
-                    port="10444"
-                    protocol="https"
-                    ssl_protocol="TLS"
-                    ssl_keystore="%home%/ssl_certs.jks"
-                    ssl_keystore_password="testas2"/>
-            <module enabled="$properties.module.DirectoryResenderModule.enabled$"
-                    classname="org.openas2.processor.resender.DirectoryResenderModule"
-                    resenddir="$properties.storageBaseDir$/resend"
-                    errordir="$properties.storageBaseDir$/resend/error"
-                    resenddelay="60"/>
-            <module enabled="$properties.module.HealthCheckModule.enabled$"
-                    classname="org.openas2.processor.receiver.HealthCheckModule"
-                    port="10099"/>
-            </processor>
-    </openas2>
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" delimiters="-" errordir="$properties.storageBaseDir$/toAny/error/$msg.sender.as2_id$-$msg.receiver.as2_id$" format="sender.as2_id, receiver.as2_id, attributes.filename" interval="5" mergeextratokens="true" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/toAny" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner ORDERFULAS2 -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXSTAGINGAS2, receiver.as2_id=ORDERFULAS2" errordir="$properties.storageBaseDir$/SendError/FLOCK/$date.YYYY$/$date.MM$" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/FLOCK/" sendfilename="true" sentdir="$properties.storageBaseDir$/$msg.sender.as2_id$-$msg.receiver.as2_id$/sent/$date.YYYY$/$date.MM$" stored_error_filename="$msg.attributes.filename$-$date.YYYY$-$date.MM$-$msg.headers.message-id$" stored_sent_filename="$msg.attributes.filename$-$msg.headers.message-id$"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner ECHSTEST -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=ECHSTEST" errordir="$properties.storageBaseDir$/SendError/ECHO" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/ECHO" sendfilename="true"/>
+                    
+        <module classname="org.openas2.processor.msgtracking.DbTrackingModule" db_directory="%home%/DB" db_name="openas2" db_pwd="OpenAS2" db_user="sa" enabled="$properties.module.DbTrackingModule.enabled$" force_load_jdbc_driver="false" jdbc_connect_string="jdbc:h2:$component.db_directory$/$component.db_name$" jdbc_driver="org.h2.Driver" sql_escape_character="'" table_name="msg_metadata" tcp_server_password="openas2" tcp_server_port="9092" tcp_server_start="true" use_embedded_db="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner ConWay_Test -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=ConWay_Test" errordir="$properties.storageBaseDir$/SendError/XPO" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/XPO" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner XPOFTL-XPOL -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=CLTSIDEV_AS2" errordir="$properties.storageBaseDir$/SendError/XPOFTL/$date.YYYY$/$date.MM$" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/XPOFTL/" sendfilename="true" sentdir="$properties.storageBaseDir$/$msg.sender.as2_id$-$msg.receiver.as2_id$/sent/$date.YYYY$/$date.MM$" stored_error_filename="$msg.attributes.filename$-$date.YYYY$-$date.MM$-$msg.headers.message-id$" stored_sent_filename="$msg.attributes.filename$-$msg.headers.message-id$"/>
+               
+            
+        <!-- This directory polling module will is dedicated to sending to partner UPSFREIGHT -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=UPSFREIGHT" errordir="$properties.storageBaseDir$/SendError/UPSFREIGHT" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/UPSFREIGHT" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner YRC -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=02RDWYT" errordir="$properties.storageBaseDir$/SendError/YRC" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/YRC" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner USFREDDAWAY -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=02RETLT" errordir="$properties.storageBaseDir$/SendError/USFREDDAWAY" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/USFREDDAWAY" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner USFHOLLAND -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=02HMEST" errordir="$properties.storageBaseDir$/SendError/USFHOLLAND" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/USFHOLLAND" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner TQL -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=TQYLAS2_T" errordir="$properties.storageBaseDir$/SendError/TQL" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/TQL" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner ABFS -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=ABFSINXEPTION" errordir="$properties.storageBaseDir$/SendError/ABFS" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/ABFS" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner ECHOTST_OID -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=ECHOTST_OID" errordir="$properties.storageBaseDir$/SendError/ECHOTST" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/ECHOTST" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner FLOKTST_OID -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=FLOKTST_OID" errordir="$properties.storageBaseDir$/SendError/FLOKTST" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/FLOKTST" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner SCHNEIDER -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=snias2qa" errordir="$properties.storageBaseDir$/SendError/SCHNEIDER" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/SCHNEIDER" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner TOC -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=TOC-Test2022" errordir="$properties.storageBaseDir$/SendError/TOC" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/TOC" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner UBER  Kleinschmidt -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=KLIINC-AS2" errordir="$properties.storageBaseDir$/SendError/UBER" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/UBER" sendfilename="true"/>
+                    
+        <!-- This directory polling module will is dedicated to sending to partner ARK -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=NEWAGEEDIAS2" errordir="$properties.storageBaseDir$/SendError/ARK" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/ARK" sendfilename="true"/>
+                
+            
+        <!-- This directory polling module will is dedicated to sending to partner coyote -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=CoyoteEDITest" errordir="$properties.storageBaseDir$/SendError/COYOTE" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/COYOTE" sendfilename="true"/>
+                     
+        <!-- This directory polling module will is dedicated to sending to partner edge -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=EDGF" errordir="$properties.storageBaseDir$/SendError/EDGE" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/EDGE" sendfilename="true"/>
+                      
+        <!-- This directory polling module will is dedicated to sending to partner edge -->
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=LOADSMARTAS2TEST" errordir="$properties.storageBaseDir$/SendError/LOADSMART" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/LOADSMART" sendfilename="true"/>
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=BABELWAY_AS2_32454" errordir="$properties.storageBaseDir$/SendError/CIRCLE" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/CIRCLE" sendfilename="true"/>
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=AIIH" errordir="$properties.storageBaseDir$/SendError/AIT" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/AIT" sendfilename="true"/>
+                    
+        <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=NTGTESTAS2" errordir="$properties.storageBaseDir$/SendError/NTG" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/NTG" sendfilename="true"/>
+                    
+        <module classname="org.openas2.processor.storage.MDNFileModule" enabled="$properties.module.MDNFileModule.enabled$" filename="$properties.storageBaseDir$/$mdn.msg.sender.as2_id$-$mdn.msg.receiver.as2_id$/mdn/$date.yyyy-MM-dd$/$mdn.msg.content-disposition.filename$-$mdn.msg.headers.message-id$" protocol="as2" tempdir="$properties.storageBaseDir$/temp"/>
+                    
+        <module classname="org.openas2.processor.storage.MessageFileModule" enabled="$properties.module.MessageFileModule.enabled$" filename="$properties.storageBaseDir$/Inbox/$msg.sender.as2_id$-$msg.receiver.as2_id$/$msg.content-disposition.filename$-$msg.headers.message-id$" header="$properties.storageBaseDir$/$msg.sender.as2_id$-$msg.receiver.as2_id$/msgheaders/$date.yyyy-MM-dd$/$msg.content-disposition.filename$-$msg.headers.message-id$" protocol="as2" tempdir="$properties.storageBaseDir$/temp"/>
+                    
+        <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.http.enabled$" errordir="$properties.storageBaseDir$/RecvError" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10080"/>
+                    
+        <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/RecvError" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="10443" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+                    
+        <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.http.enabled$" port="10081"/>
+                    
+        <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="10444" protocol="https" ssl_keystore="%home%/ssl_certs.jks" ssl_keystore_password="testas2" ssl_protocol="TLS"/>
+                    
+        <module classname="org.openas2.processor.resender.DirectoryResenderModule" enabled="$properties.module.DirectoryResenderModule.enabled$" errordir="$properties.storageBaseDir$/resend/error" resenddelay="60" resenddir="$properties.storageBaseDir$/resend"/>
+                    
+        <module classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="10099"/>
+                    
+    </processor>
+        
+    <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule" defaults="sender.as2_id=INXTESTAS2, receiver.as2_id=1234" errordir="$properties.storageBaseDir$/SendError/NTG" interval="5" mimetype="application/EDI-X12" outboxdir="$properties.storageBaseDir$/Outbox/NTG" sendfilename="true"/>
+</openas2>
