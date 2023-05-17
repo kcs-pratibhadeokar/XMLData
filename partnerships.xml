@@ -1,111 +1,154 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <partnerships>
-        
-    <partner as2_id="INXTESTAS2" email="as2msgs@openas2.com" name="INX" x509_alias="inxeption"/>
-             
-    <partner as2_id="INXSTAGINGAS2" email="as2msgs@openas2.com" name="INX2" x509_alias="inxeption"/>
-        
-    <partner as2_id="ORDERFULAS2" email="as2msgs@flok.com" name="FLOK" x509_alias="flok"/>
-        
-    <partner as2_id="ECHSTEST" email="as2msgs@echo.com" name="ECHO" x509_alias="echo"/>
-        
-    <partner as2_id="ConWay_Test" email="as2msgs@xpo.com" name="XPO" x509_alias="xpo"/>
-                
-    
-    <partner as2_id="CLTSIDEV_AS2" email="XPOEDISupport@xpo.com" name="XPOFTL" x509_alias="xpoftl"/>
-        
-    <partner as2_id="UPSFREIGHT" email="as2msgs@upsfreight.com" name="UPSFREIGHT" x509_alias="upsfreight"/>
-        
-    <partner as2_id="02RDWYT" email="as2msgs@yellow.com" name="YRC" x509_alias="yellow"/>
-        
-    <partner as2_id="02RETLT" email="as2msgs@yellow.com" name="USFREDDAWAY" x509_alias="yellow"/>
-        
-    <partner as2_id="02HMEST" email="as2msgs@yellow.com" name="USFHOLLAND" x509_alias="yellow"/>
-        
-    <partner as2_id="TQYLAS2_T" email="as2msgs@tql.com" name="TQL" x509_alias="tql"/>
-        
-    <partner as2_id="ABFSINXEPTION" email="as2msgs@abfs.com" name="ABFS" x509_alias="abfs"/>
-        
-    <partner as2_id="ECHOTST_OID" email="as2msgs@echo.com" name="ECHOTST" x509_alias="echotst"/>
-        
-    <partner as2_id="FLOKTST_OID" email="as2msgs@echo.com" name="FLOKTST" x509_alias="floktst"/>
-                
-    
-    <partner as2_id="snias2qa" email="as2msgs@echo.com" name="SCHNEIDER" x509_alias="schneider"/>
-                
-    
-    <partner as2_id="TOC-Test2022" email="as2msgs@echo.com" name="TOC" x509_alias="tcqv"/>
-                
-    
-    <partner as2_id="KLIINC-AS2" email="smimecs@kleinschmidt.com" name="UBER" x509_alias="uber"/>
-                
-    
-    <partner as2_id="NEWAGEEDIAS2" email="as2msgs@openas2.com" name="ARK" x509_alias="ark"/>
-                
-    
-    <partner as2_id="CoyoteEDITest" email="edi@coyote.com" name="COYOTE" x509_alias="coyote"/>
-                
-    
-    <partner as2_id="EDGF" email="as2msgs@openas2.com" name="EDGE" x509_alias="edge"/>
-                
-    
-    <partner as2_id="LOADSMARTAS2TEST" email="support-edi@loadsmart.com" name="LOADSMART" x509_alias="loadsmart"/>
-        
             
     
+    <partner as2_id="INXTESTAS2" email="as2msgs@openas2.com" name="INX" x509_alias="inxeption"/>
+                 
+    
+    <partner as2_id="INXSTAGINGAS2" email="as2msgs@openas2.com" name="INX2" x509_alias="inxeption"/>
+            
+    
+    <partner as2_id="ORDERFULAS2" email="as2msgs@flok.com" name="FLOK" x509_alias="flok"/>
+            
+    
+    <partner as2_id="ECHSTEST" email="as2msgs@echo.com" name="ECHO" x509_alias="echo"/>
+            
+    
+    <partner as2_id="ConWay_Test" email="as2msgs@xpo.com" name="XPO" x509_alias="xpo"/>
+                    
+    
+    
+    <partner as2_id="CLTSIDEV_AS2" email="XPOEDISupport@xpo.com" name="XPOFTL" x509_alias="xpoftl"/>
+            
+    
+    <partner as2_id="UPSFREIGHT" email="as2msgs@upsfreight.com" name="UPSFREIGHT" x509_alias="upsfreight"/>
+            
+    
+    <partner as2_id="02RDWYT" email="as2msgs@yellow.com" name="YRC" x509_alias="yellow"/>
+            
+    
+    <partner as2_id="02RETLT" email="as2msgs@yellow.com" name="USFREDDAWAY" x509_alias="yellow"/>
+            
+    
+    <partner as2_id="02HMEST" email="as2msgs@yellow.com" name="USFHOLLAND" x509_alias="yellow"/>
+            
+    
+    <partner as2_id="TQYLAS2_T" email="as2msgs@tql.com" name="TQL" x509_alias="tql"/>
+            
+    
+    <partner as2_id="ABFSINXEPTION" email="as2msgs@abfs.com" name="ABFS" x509_alias="abfs"/>
+            
+    
+    <partner as2_id="ECHOTST_OID" email="as2msgs@echo.com" name="ECHOTST" x509_alias="echotst"/>
+            
+    
+    <partner as2_id="FLOKTST_OID" email="as2msgs@echo.com" name="FLOKTST" x509_alias="floktst"/>
+                    
+    
+    
+    <partner as2_id="snias2qa" email="as2msgs@echo.com" name="SCHNEIDER" x509_alias="schneider"/>
+                    
+    
+    
+    <partner as2_id="TOC-Test2022" email="as2msgs@echo.com" name="TOC" x509_alias="tcqv"/>
+                    
+    
+    
+    <partner as2_id="KLIINC-AS2" email="smimecs@kleinschmidt.com" name="UBER" x509_alias="uber"/>
+                    
+    
+    
+    <partner as2_id="NEWAGEEDIAS2" email="as2msgs@openas2.com" name="ARK" x509_alias="ark"/>
+                    
+    
+    
+    <partner as2_id="CoyoteEDITest" email="edi@coyote.com" name="COYOTE" x509_alias="coyote"/>
+                    
+    
+    
+    <partner as2_id="EDGF" email="as2msgs@openas2.com" name="EDGE" x509_alias="edge"/>
+                    
+    
+    
+    <partner as2_id="LOADSMARTAS2TEST" email="support-edi@loadsmart.com" name="LOADSMART" x509_alias="loadsmart"/>
+            
+            
+    
+    
     <partner as2_id="BABELWAY_AS2_32454" email="support@babelway.com" name="CIRCLE" x509_alias="circle"/>
-       
+           
+    
     
     <partner as2_id="AIIH" email="dea-alerts-edi@aitworldwide.com" name="AIT" x509_alias="ait"/>
-                
+                    
+    
     
     <partner as2_id="NTGTESTAS2" email="edi@ntgfreight.com" name="NTG" x509_alias="ntg"/>
-                
+                    
+    
     
     <partnership name="INX2-to-FLOK">
-                    
+                            
+        
         <sender name="INX2"/>
-                    
+                            
+        
         <receiver name="FLOK"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="binary"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://ol.orderful.com/OAS2"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.com"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/> 
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA256"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
                             
+        
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA256"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                                    
+        
         <!--
                     Example for adding static custom headers to Mime body part and additionally add to HTTP
                     <attribute name="custom_mime_headers" value="X-CustomHeader: shift-shape ; X-CustomShape: oblong"/>
                     <attribute name="add_custom_mime_headers_to_http" value="true"/>
                     -->
-        	
+                	
                     
+        
         <!--
                     Example for adding dynamic custom headers to Mime body part using delimiters where filename is of form XXX-YYY-ZZZ or XXX_YYY-ZZZ etc
             <attribute name="custom_mime_header_names_from_filename" value="header.X-CustomRouteId,header.X-CustomCenter, junk.extraStuff"/>
@@ -119,1034 +162,1515 @@
             <attribute name="attribute_names_from_filename" value="P-DynamicParm1,P-DynamicParm2"/>
             <attribute name="attribute_values_regex_on_filename" value="([A-Za-z]*)([^.]*).edi"/>
                     -->
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="FLOK-to-INX2">
-                    
+                            
+        
         <sender name="FLOK"/>
-                    
+                            
+        
         <receiver name="INX2"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="INX-to-ECHO">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="ECHO"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://Qa1-as2.echo.com:8098/INXEPTION/"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/> 
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="ECHO-to-INX">
-                    
+                            
+        
         <sender name="ECHO"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-XPO">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="XPO"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://b2b-test.xpo.com:443/exchange/ConWay_Test_AS2S"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/> 
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="XPO-to-INX">
-                    
+                            
+        
         <sender name="XPO"/>
-                    
+                            
+        
         <receiver name="INX"/>
-            
+                    
+    
     </partnership>
-         
+             
+    
     <partnership name="INX-to-XPOFTL">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="XPOFTL"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="http://b2bdev.rxo.com:6081/as2"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/> 
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="XPOFTL-to-INX">
-                    
+                            
+        
         <sender name="XPOFTL"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-UPSFREIGHT">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="UPSFREIGHT"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://EDI:5080/exchange/UPSFREIGHT"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/> 
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="UPSFREIGHT-to-INX">
-                    
+                            
+        
         <sender name="UPSFREIGHT"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-YRC">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="YRC"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://b2bstg.myyellow.com:443/inbound/as2"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="YRC-to-INX">
-                    
+                            
+        
         <sender name="YRC"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-USFREDDAWAY">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="USFREDDAWAY"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://b2bstg.myyellow.com:443/inbound/as2"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="USFREDDAWAY-to-INX">
-                    
+                            
+        
         <sender name="USFREDDAWAY"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-USFHOLLAND">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="USFHOLLAND"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://b2bstg.myyellow.com:443/inbound/as2"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="USFHOLLAND-to-INX">
-                    
+                            
+        
         <sender name="USFHOLLAND"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-TQL">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="TQL"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://b2bstage.tql.com:443/pub/Receive.rsb"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="TQL-to-INX">
-                    
+                            
+        
         <sender name="TQL"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-ABFS">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="ABFS"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="http://as2.arcbtech.com"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="ABFS-to-INX">
-                    
+                            
+        
         <sender name="ABFS"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-ECHOTST">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="ECHOTST"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="http://10.0.0.113:7070"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/> 
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA1"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA1"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="ECHOTST-to-INX">
-                    
-        <sender name="ECHOTST"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="ECHOTST"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-FLOKTST">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="FLOKTST"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="http://5.196.241.180:7080"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/> 
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA1"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="FLOKTST-to-INX">
-                    
-        <sender name="FLOKTST"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="FLOKTST"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     <partnership name="INX-to-SCHNEIDER">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="SCHNEIDER"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://b2bqa.sndrio.com/as2"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA1"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="SCHNEIDER-to-INX">
-                    
-        <sender name="SCHNEIDER"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="SCHNEIDER"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     
     <partnership name="INX-to-TOC">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="TOC"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="http://13.90.248.168:8080/as2/HttpReceiver"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA256"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="TOC-to-INX">
-                    
-        <sender name="TOC"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="TOC"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     
     <partnership name="INX-to-UBER">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="UBER"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="prevent_chunking" value="true"/>
-                    
+                            
+        
         <attribute name="no_chunked_max_size" value="104857600"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://API-P1.kleinschmidtinc.com/as2in/senddatav3?subscription-key=8c45739bc2cf4850a09a1e8c784b8fa2"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA256"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="UBER-to-INX">
-                    
-        <sender name="UBER"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="UBER"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     
     <partnership name="INX-to-ARK">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="ARK"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="prevent_chunking" value="true"/>
-                    
+                            
+        
         <attribute name="no_chunked_max_size" value="104857600"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://efsas2.newage-global.com:8443/as2/HttpReceiver"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA256"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="ARK-to-INX">
-                    
-        <sender name="ARK"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="ARK"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     
     <partnership name="INX-to-COYOTE">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="COYOTE"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="prevent_chunking" value="true"/>
-                    
+                            
+        
         <attribute name="no_chunked_max_size" value="104857600"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://edi-test.coyote.com:443/as2"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA256"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="COYOTE-to-INX">
-                    
-        <sender name="COYOTE"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="COYOTE"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
      
+    
     <partnership name="INX-to-EDGE">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="EDGE"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="prevent_chunking" value="true"/>
-                    
+                            
+        
         <attribute name="no_chunked_max_size" value="104857600"/>
-                    
+                            
+        
         <attribute name="compression_type" value="ZLIB"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://edgf.mcleodas2.com:20443"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA1"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="EDGE-to-INX">
-                    
-        <sender name="EDGE"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="EDGE"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     
     <partnership name="INX-to-LOADSMART">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="LOADSMART"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="prevent_chunking" value="true"/>
-                    
+                            
+        
         <attribute name="no_chunked_max_size" value="104857600"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://edi-transport.sandbox.loadsmart.io/as2/receive"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA256"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
+                    
+    
     </partnership>
-        
+            
+    
     <partnership name="LOADSMART-to-INX">
-                    
-        <sender name="LOADSMART"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
+                            
         
+        <sender name="LOADSMART"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
     
     <partnership name="INX-to-CIRCLE">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="CIRCLE"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="prevent_chunking" value="true"/>
-                    
+                            
+        
         <attribute name="no_chunked_max_size" value="104857600"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://us1.babelway.net/corvus/httpd/as2/inbound"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA256"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
+                            
         
-    <partnership name="CIRCLE-to-INX">
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA256"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
                     
-        <sender name="CIRCLE"/>
-                    
-        <receiver name="INX"/>
-            
+    
     </partnership>
             
+    
+    <partnership name="CIRCLE-to-INX">
+                            
+        
+        <sender name="CIRCLE"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+                
+    
     
     <partnership name="INX-to-AIT">
-                    
+                            
+        
         <sender name="INX"/>
-                    
+                            
+        
         <receiver name="AIT"/>
-                    
+                            
+        
         <attribute name="protocol" value="as2"/>
-                    
+                            
+        
         <attribute name="content_transfer_encoding" value="8bit"/>
-                    
+                            
+        
         <attribute name="prevent_chunking" value="true"/>
-                    
+                            
+        
         <attribute name="no_chunked_max_size" value="104857600"/>
-                    
+                            
+        
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
+                            
+        
         <attribute name="as2_url" value="https://aitlsgtwy.aitworldwide.com:8443/InxeptionTest"/>
-                    
+                            
+        
         <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
+                            
+        
         <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
+                            
+        
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
             Example below uses a property from the config.xml to facilitate centralised management of the URL
             <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
             -->
-                    
+                            
+        
         <attribute name="encrypt" value="3DES"/>
-                    
+                            
+        
         <attribute name="sign" value="SHA256"/>
-                    
+                            
+        
         <attribute name="resend_max_retries" value="3"/>
-                    
+                            
+        
         <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
+                            
+        
         <attribute name="rename_digest_to_old_name" value="false"/>
-                    
+                            
+        
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
-        
-    <partnership name="AIT-to-INX">
                     
-        <sender name="AIT"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
-        
-    <partnership name="INX-to-NTG">
-                    
-        <sender name="INX"/>
-                    
-        <receiver name="NTG"/>
-                    
-        <attribute name="protocol" value="as2"/>
-                    
-        <attribute name="content_transfer_encoding" value="8bit"/>
-                    
-        <attribute name="prevent_chunking" value="true"/>
-                    
-        <attribute name="no_chunked_max_size" value="104857600"/>
-                    
-        <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-                    
-        <attribute name="as2_url" value="https://nolantransportion-stage.cleointegration.cloud/as2"/>
-                    
-        <attribute name="as2_mdn_to" value="edi@inx.org"/>
-                    
-        <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
-                    
-        <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
-            Example below uses a property from the config.xml to facilitate centralised management of the URL
-            <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
-            -->
-                    
-        <attribute name="encrypt" value="3DES"/>
-                    
-        <attribute name="sign" value="SHA256"/>
-                    
-        <attribute name="resend_max_retries" value="3"/>
-                    
-        <attribute name="prevent_canonicalization_for_mic" value="false"/>
-                    
-        <attribute name="rename_digest_to_old_name" value="false"/>
-                    
-        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
-            
-    </partnership>
-        
-    <partnership name="NTG-to-INX">
-                    
-        <sender name="NTG"/>
-                    
-        <receiver name="INX"/>
-            
-    </partnership>
     
+    </partnership>
+            
+    
+    <partnership name="AIT-to-INX">
+                            
+        
+        <sender name="AIT"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+            
+    
+    <partnership name="INX-to-NTG">
+                            
+        
+        <sender name="INX"/>
+                            
+        
+        <receiver name="NTG"/>
+                            
+        
+        <attribute name="protocol" value="as2"/>
+                            
+        
+        <attribute name="content_transfer_encoding" value="8bit"/>
+                            
+        
+        <attribute name="prevent_chunking" value="true"/>
+                            
+        
+        <attribute name="no_chunked_max_size" value="104857600"/>
+                            
+        
+        <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
+                            
+        
+        <attribute name="as2_url" value="https://nolantransportion-stage.cleointegration.cloud/as2"/>
+                            
+        
+        <attribute name="as2_mdn_to" value="edi@inx.org"/>
+                            
+        
+        <attribute name="as2_mdn_options" value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
+                            
+        
+        <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
+            Example below uses a property from the config.xml to facilitate centralised management of the URL
+            <attribute name="as2_receipt_option" value="$properties.as2_async_mdn_url$"/>
+            -->
+                            
+        
+        <attribute name="encrypt" value="3DES"/>
+                            
+        
+        <attribute name="sign" value="SHA256"/>
+                            
+        
+        <attribute name="resend_max_retries" value="3"/>
+                            
+        
+        <attribute name="prevent_canonicalization_for_mic" value="false"/>
+                            
+        
+        <attribute name="rename_digest_to_old_name" value="false"/>
+                            
+        
+        <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
+                    
+    
+    </partnership>
+            
+    
+    <partnership name="NTG-to-INX">
+                            
+        
+        <sender name="NTG"/>
+                            
+        
+        <receiver name="INX"/>
+                    
+    
+    </partnership>
+        
+
+    <partner as2_id="testas2+id" email="" name=" testname" x509_alias="testx509"/>
 </partnerships>
