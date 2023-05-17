@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <partnerships>
         
-    <partner as2_id="INXTESTAS2" email="as2msgs@openas2.com" name="INX" x509_alias="inxeption">
-        <partner as2_id="INXTESTAS211" email="as2msgs@openas211.com" name="INX11" x509_alias="inxeption11"/>
-    </partner>
-        
+    <partner as2_id="INXTESTAS2" email="as2msgs@openas2.com" name="INX" x509_alias="inxeption"/>
+             
     <partner as2_id="INXSTAGINGAS2" email="as2msgs@openas2.com" name="INX2" x509_alias="inxeption"/>
         
     <partner as2_id="ORDERFULAS2" email="as2msgs@flok.com" name="FLOK" x509_alias="flok"/>
