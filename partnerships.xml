@@ -60,8 +60,7 @@
                 
     
     <partner as2_id="NTGTESTAS2" email="edi@ntgfreight.com" name="NTG" x509_alias="ntg">
-        <partner as2_id="as2test" email="test@com" name="test" x509_alias="x509test"/>
-    </partner>
+           </partner>
                 
     
     <partnership name="INX2-to-FLOK">
