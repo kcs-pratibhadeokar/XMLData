@@ -8,6 +8,6 @@
     <module classname="org.openas2.processor.sender.AS2SenderModule" enabled="$properties.module.AS2SenderModule.enabled$" readtimeout="$properties.module.AS2SenderModule.readtimeout$" receiver_as2="xyz" sender_as2="inx"/>
       
     <module classname="org.openas2.processor.sender.AS2SenderModule" enabled="$properties.module.AS2SenderModule.enabled$" readtimeout="$properties.module.AS2SenderModule.readtimeout$" receiver_as2="123" sender_as2="inx"/>
-    
+    <module classname="org.openas2.processor.sender.AS2SenderModule" enabled="$properties.module.AS2SenderModule.enabled$" readtimeout="$properties.module.AS2SenderModule.readtimeout$" receiver_as2="123" sender_as2="inx"/>
     <module classname="org.openas2.processor.sender.AS2SenderModule" enabled="$properties.module.AS2SenderModule.enabled$" readtimeout="$properties.module.AS2SenderModule.readtimeout$" receiver_as2="abcdef" sender_as2="inx"/>
 </processor>
